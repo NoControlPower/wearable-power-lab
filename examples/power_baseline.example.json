@@ -1,0 +1,15 @@
+{
+  "name": "example ring (illustrative numbers, NOT measured)",
+  "note": "示例基线表：状态互斥，单位 µA（马达为 mA）。数字为虚构示例，仅用于演示方法。",
+  "columns": ["state", "spec_ua", "v1_ua", "v2_ua", "v3_ua", "v4_ua"],
+  "rows": [
+    ["standby_unworn", 70, 121, 77, 78, 83],
+    ["standby_worn", 70, 122, 88, 87, 89],
+    ["ship_mode", 1, 0.07, 0.05, 0.10, 0.05],
+    ["ble_connected", 50, 172, 83, 80, 110],
+    ["ble_advertising", 70, 121, 87, 80, 103],
+    ["hr_capture_1min", null, 247, 170, 288, 262],
+    ["spo2_capture_1min", 300, 473, 447, 876, 457],
+    ["motor_avg_ma", 50, null, null, 45, 26]
+  ]
+}
