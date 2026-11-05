@@ -1,0 +1,37 @@
+{
+  "name": "example ring (illustrative numbers, NOT measured)",
+  "note": "状态互斥；数字仅用于演示模型，不来自任何真实产品测量。",
+  "battery_mah": [13, 17, 21],
+  "phases": [
+    {
+      "name": "awake_connected",
+      "current_ua": 250,
+      "seconds_per_day": 36000,
+      "comment": "16h 里的 10h，BLE 连接态"
+    },
+    {
+      "name": "awake_idle",
+      "current_ua": 100,
+      "seconds_per_day": 21600,
+      "comment": "剩余 6h 清醒空闲"
+    },
+    {
+      "name": "sleep_window_ppg",
+      "current_ua": 700,
+      "seconds_per_day": 28800,
+      "comment": "8h 睡眠段，含 PPG 25Hz"
+    },
+    {
+      "name": "auto_measure_running",
+      "current_ua": 3000,
+      "seconds_per_day": 120,
+      "comment": "每天累计 2 分钟测量态"
+    },
+    {
+      "name": "haptics",
+      "current_ua": 47000,
+      "seconds_per_day": 2,
+      "comment": "单次 2s 振动"
+    }
+  ]
+}
